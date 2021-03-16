@@ -2,9 +2,9 @@
 ```
 This project done on a Ubuntu virtual machine 20.10.
 
-###Thanks to Luma for helping me to complete this project
+### Thanks to Luma for helping me to complete this project
 
-##The requirements:
+## The requirements:
 ```
  Build an app in docker-compos after installing Docker, docker compose, and Mariadb.
  Set up a sharded database.
@@ -12,7 +12,8 @@ This project done on a Ubuntu virtual machine 20.10.
  
 ## To install Docker:
 ```
-###Update your existing list of packages
+###Update your existing list of packages:
+
 sudo apt update   
 
 ###Install a few prerequisite packages which let apt use packages over HTTPS
