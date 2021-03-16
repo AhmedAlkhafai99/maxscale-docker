@@ -2,8 +2,7 @@
 ```
 This project done on a Ubuntu virtual machine 20.10.
 
-### Thanks to Luma for helping me to complete this project
-
+Thanks to Luma for helping me to complete this project
 
 
 ## The requirements:
