@@ -87,13 +87,13 @@ Starting maxscale_maxscale_1 ... done
 ```
 docker-compose ps
 ```
-      Name                   Command            State            Ports         
---------------------------------------------------------------------------------
 maxscale_master2_1    docker-entrypoint.sh mysql ...   Up      0.0.0.0:4003->3306/tcp                                  
 maxscale_master_1     docker-entrypoint.sh mysql ...   Up      0.0.0.0:4001->3306/tcp                                  
 maxscale_maxscale_1   /usr/bin/tini -- docker-en ...   Up      3306/tcp, 0.0.0.0:4000->4000/tcp, 0.0.0.0:8989->8989/tcp
 
+
 ```
+
 ### Run this command to check that the servers up and running
 ```
 docker-compose exec maxscale maxctrl list servers
