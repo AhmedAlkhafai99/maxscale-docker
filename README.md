@@ -151,12 +151,17 @@ MariaDB [(none)]> show databases;
 MariaDB [(none)]> show databases;
 
 MariaDB [(none)]> show databases;
+
+
 +--------------------+
-| Database           |
+|                    |
+ Database            |
 +--------------------+
+| 
 | information_schema |
 | mysql              |
-| performance_schema |
+| 
+  performance_schema |
 | zipcodes_one       |
 | zipcodes_two       |
 +--------------------+
