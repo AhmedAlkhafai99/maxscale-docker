@@ -16,9 +16,10 @@ Demonstrate the merged database.
 
 
 ### Update your existing list of packages:
-
-sudo apt update   
 ```
+sudo apt update   
+
+
 ###Install a few prerequisite packages which let apt use packages over HTTPS
 
 sudo apt install apt-transport-https ca-certificates curl software-properties-common 
