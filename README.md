@@ -139,13 +139,21 @@ MariaDB [(none)]>
 MariaDB [(none)]> show databases;
 
 +-----------------------+
+
 |                       |
+
 +-----------------------+
+
 |                       |
+
 |                       |
+
 |                       |
+
 |                       |
+
 |                       |
+
 +-----------------------+
 
 MariaDB [(none)]> show databases;
