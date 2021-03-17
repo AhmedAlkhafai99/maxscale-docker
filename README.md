@@ -97,7 +97,8 @@ maxscale_maxscale_1   /usr/bin/tini -- docker-en ...   Up      3306/tcp, 0.0.0.0
 ### Run this command to check that the servers up and running
 ```
 docker-compose exec maxscale maxctrl list servers
-
+```
+### It will show this result
 ┌────────────────┬─────────┬──────┬─────────────┬─────────────────┬───────────┐
 │ Server         │ Address │ Port │ Connections │ State           │ GTID      │
 ├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
@@ -109,8 +110,12 @@ docker-compose exec maxscale maxctrl list servers
 ```
 
 
+## Run this command to connect to mariadb using the username: maxuser, maxpwd as a password and that will be on the port 4000
+```
 
-
+mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000
+```
+### It will show this result
 
 
 
