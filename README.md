@@ -110,7 +110,7 @@ docker-compose exec maxscale maxctrl list servers
 ├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
 │ zip_master_two │ master2 │ 3306 │ 0           │ Master, Running │ 0-3000-31 │
 └────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
-
+```
 
 
 ## Run this command to connect to mariadb using the username: maxuser, maxpwd as a password and that will be on the port 4000
@@ -118,7 +118,43 @@ docker-compose exec maxscale maxctrl list servers
 
 mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000
 ```
+
 ### It will show this result
+```
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 1
+Server version: 10.5.9-MariaDB-1:10.5.9+maria~focal-log mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
