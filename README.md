@@ -15,13 +15,13 @@ Demonstrate the merged database.
 ## To install Docker:
 ```
 ###Update your existing list of packages:
-
+```
 sudo apt update   
-
+```
 ###Install a few prerequisite packages which let apt use packages over HTTPS
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common 
-
+```
 ###Then add the GPG key for the official Docker repository to your system
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
