@@ -148,38 +148,20 @@ MariaDB [(none)]> show databases;
 | zipcodes_two          |
 +-----------------------+
 
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| zipcodes_one       |
+| zipcodes_two       |
++--------------------+
+
+
+
 5 rows in set (0.001 sec)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
