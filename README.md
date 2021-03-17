@@ -93,9 +93,8 @@ maxscale_master2_1    docker-entrypoint.sh       Up      0.0.0.0:4003->3306/tcp
                       mysql ...                                                 
 maxscale_master_1     docker-entrypoint.sh       Up      0.0.0.0:4001->3306/tcp 
                       mysql ...                                                 
-maxscale_maxscale_1   /usr/bin/tini -- docker-   Up      3306/tcp,              
-                      en ...                             0.0.0.0:4000->4000/tcp,
-                                                         0.0.0.0:8989->8989/tcp 
+maxscale_maxscale_1   /usr/bin/tini -- docker-   Up      3306/tcp, 0.0.0.0:4000->4000/tcp, 0.0.0.0:8989->8989/tcp                              
+```                                                          
 
 
 
