@@ -134,35 +134,11 @@ MariaDB [(none)]>
 
 ## Use command - show databases - to navigate to mariadb, and to check that the zipcodes_one and zipcodes_two databases successfully there
 ```
+show datatbases
+```
 ### It will show this result:
 ```
 MariaDB [(none)]> show databases;
-
-+-----------------------+                     
-|  A |
-
-|  B |
-
-| B  |
-
-| C  |
-
-|   |
-
-|   |
-
-|| 
-
-+-----------------------+
-+-----------------------+
-
-MariaDB [(none)]> show databases;
-
-MariaDB [(none)]> show databases;
- <pre>show databases
-SHOW DATABASES
-SHOW DATABASES&apos; at line 2
-MariaDB [(none)]&gt; show databases;
 +--------------------+
 | Database           |
 +--------------------+
@@ -173,30 +149,7 @@ MariaDB [(none)]&gt; show databases;
 | zipcodes_two       |
 +--------------------+
 <b>5 rows in set (0.001 sec)</b>
-
-MariaDB [(none)]&gt; 
-</pre>
-
-+--------------------+
-|                    |
- Database            |
-+--------------------+
-| 
-| information_schema |
-| mysql              |
-| 
-  performance_schema |
-| zipcodes_one       |
-| zipcodes_two       |
-+--------------------+
-
 ```
 
-```
-
-
-
-5 rows in set (0.001 sec)
-```
 
 
