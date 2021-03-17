@@ -139,13 +139,13 @@ MariaDB [(none)]>
 MariaDB [(none)]> show databases;
 
 +-----------------------+
-| Database              |
+|                       |
 +-----------------------+
-| information_schema    |
-| mysql                 |
-| performance_schema    |
-| zipcodes_one          |
-| zipcodes_two          |
+|                       |
+|                       |
+|                       |
+|                       |
+|                       |
 +-----------------------+
 
 MariaDB [(none)]> show databases;
