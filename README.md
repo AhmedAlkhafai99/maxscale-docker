@@ -20,7 +20,7 @@ Demonstrate the merged database.
 sudo apt update   
 ```
 
-### Install a few prerequisite packages which let apt use packages over HTTPS
+### Install a few prerequisite packages which let apt use packages over HTTPS.
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common 
 ```
@@ -30,36 +30,36 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-### Add the Docker repository to APT sources
+### Add the Docker repository to APT sources.
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"    
 ```
 
-### Update the package database with the Docker packages from the newly added repo
+### Update the package database with the Docker packages from the newly added repo.
 ```
 sudo apt update    
 ```
 
-### Make sure you are about to install from the Docker repo instead of the default Ubuntu repo
+### Make sure you are about to install from the Docker repo instead of the default Ubuntu repo.
 ```
 apt-cache policy docker-ce
 ```
 
-### Install Docker
+### Install Docker.
 ```
 sudo apt install docker-ce   
 ```
 
-### To check the Docker status
+### To check the Docker status.
 ```
 sudo systemctl status docker 
 ```
 
-## To install Docker Compose:
+### To install Docker Compose:
 ```
 sudo apt install docker-compose
 ```
-## To install Mariadb:
+### To install Mariadb:
 ```
 sudo apt install mariadb-client
 ```
@@ -67,7 +67,7 @@ sudo apt install mariadb-client
 ```
 git clone https://github.com/AhmedAlkhafai99/maxscale-docker
 ```
-#### Then move to maxscale-docker/maxscale/ directory:
+#### Then move to maxscale-docker/maxscale/ directory.
 ```
 cd maxscale-docker/maxscale/
 ```
@@ -76,14 +76,14 @@ cd maxscale-docker/maxscale/
 docker-compose up -d
 ```
 
-### It will show this result
+### It will show this result:
 ```
 Starting maxscale_master2_1 ... done
 Starting maxscale_master_1  ... done
 Starting maxscale_maxscale_1 ... done
 ```
 
-### Now you should have 3 containers maxscale_master2_1, maxscale_master_1 and maxscale_maxscale_1 by running this command 
+### Now you should have 3 containers maxscale_master2_1, maxscale_master_1 and maxscale_maxscale_1 by running this command:
 ```
 
 docker-compose ps
@@ -98,7 +98,7 @@ maxscale_maxscale_1   /usr/bin/tini -- docker-en ...   Up      3306/tcp, 0.0.0.0
 ```
 docker-compose exec maxscale maxctrl list servers
 ```
-### It will show this result
+### It will show this result:
 ```
 
 docker-compose exec maxscale maxctrl list servers
@@ -119,7 +119,7 @@ docker-compose exec maxscale maxctrl list servers
 mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000
 ```
 
-### It will show this result
+### It will show this result:
 ```
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 1
@@ -132,11 +132,22 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 MariaDB [(none)]> 
 ```
 
-
-
-
-
-
+## Use command - show databases - to navigate to mariadb, and to check that the zipcodes_one and zipcodes_two databases successfully there
+```
+### It will show this result:
+```
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| zipcodes_one       |
+| zipcodes_two       |
++--------------------+
+5 rows in set (0.001 sec)
+```
 
 
 
