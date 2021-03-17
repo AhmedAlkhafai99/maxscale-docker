@@ -133,9 +133,6 @@ MariaDB [(none)]>
 ```
 
 ## Use command - show databases - to navigate to mariadb, and to check that the zipcodes_one and zipcodes_two databases successfully there
-```
-show datatbases
-```
 ### It will show this result:
 ```
 MariaDB [(none)]> show databases;
@@ -150,6 +147,43 @@ MariaDB [(none)]> show databases;
 +--------------------+
 <b>5 rows in set (0.001 sec)</b>
 ```
+## Executing SQL queries
+### Run this command below to query The last 10 rows of zipcodes_one
+```
+SELECT * FROM zipcodes_one.zipcodes_one LIMIT 9990,10;
+```
+
+
+<pre>+---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+| Zipcode | ZipCodeType | City           | State | LocationType | Coord_Lat | Coord_Long | Location                | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
++---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+|   40843 | STANDARD    | HOLMES MILL    | KY    | PRIMARY      | 36.86     | -83        | NA-US-KY-HOLMES MILL    | FALSE         |                |                       |            |
+|   41425 | STANDARD    | EZEL           | KY    | PRIMARY      | 37.89     | -83.44     | NA-US-KY-EZEL           | FALSE         | 390             | 801                 | 10204009   |
+|   40118 | STANDARD    | FAIRDALE       | KY    | PRIMARY      | 38.11     | -85.75     | NA-US-KY-FAIRDALE       | FALSE         | 4398            | 7635                  | 122449930  |
+|   40020 | PO BOX      | FAIRFIELD      | KY    | PRIMARY      | 37.93     | -85.38     | NA-US-KY-FAIRFIELD      | FALSE         |                |                       |            |
+|   42221 | PO BOX      | FAIRVIEW       | KY    | PRIMARY      | 36.84     | -87.31     | NA-US-KY-FAIRVIEW       | FALSE         |                |                       |            |
+|   41426 | PO BOX      | FALCON         | KY    | PRIMARY      | 37.78     | -83        | NA-US-KY-FALCON         | FALSE         |                |                       |            |
+|   40932 | PO BOX      | FALL ROCK      | KY    | PRIMARY      | 37.22     | -83.78     | NA-US-KY-FALL ROCK      | FALSE         |                |                       |            |
+|   40119 | STANDARD    | FALLS OF ROUGH | KY    | PRIMARY      | 37.6      | -86.55     | NA-US-KY-FALLS OF ROUGH | FALSE         | 760            |   1468                | 20771670   |
+|   42039 | STANDARD    | FANCY FARM     | KY    | PRIMARY      | 36.75     | -88.79     | NA-US-KY-FANCY FARM     | FALSE         | 696            |   1317                | 20643485   |
+|   40319 | PO BOX      | FARMERS        | KY    | PRIMARY      | 38.14     | -83.54     | NA-US-KY-FARMERS        | FALSE         |                |                       |            |
++---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+<b>10 rows in set (0.004 sec)</b>
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
