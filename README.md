@@ -20,28 +20,40 @@ Demonstrate the merged database.
 sudo apt update   
 ```
 
-###Install a few prerequisite packages which let apt use packages over HTTPS
-
+### Install a few prerequisite packages which let apt use packages over HTTPS
+```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common 
 ```
-###Then add the GPG key for the official Docker repository to your system
+
+### Then add the GPG key for the official Docker repository to your system
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
 
-###Add the Docker repository to APT sources
+### Add the Docker repository to APT sources
+```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"    
+```
 
-###Update the package database with the Docker packages from the newly added repo
+### Update the package database with the Docker packages from the newly added repo
+```
 sudo apt update    
+```
 
-###Make sure you are about to install from the Docker repo instead of the default Ubuntu repo
+### Make sure you are about to install from the Docker repo instead of the default Ubuntu repo
+```
 apt-cache policy docker-ce
+```
 
-###Install Docker
+### Install Docker
+```
 sudo apt install docker-ce   
+```
 
-###To check the Docker status
+### To check the Docker status
+```
 sudo systemctl status docker 
+```
 
 ## To install Docker Compose:
 ```
@@ -62,13 +74,15 @@ cd maxscale-docker/maxscale/
 ### To bring the containers up:
 ```
 docker-compose up -d
+```
 
-###It will show this result
+### It will show this result
+```
 Starting maxscale_master2_1 ... done
 Starting maxscale_master_1  ... done
 Starting maxscale_maxscale_1 ... done
-
 ```
+
 ### Now you should have 3 containers maxscale_master2_1, maxscale_master_1 and maxscale_maxscale_1 by running this command 
 ```
 docker-compose ps
