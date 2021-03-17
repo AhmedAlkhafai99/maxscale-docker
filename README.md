@@ -153,7 +153,7 @@ MariaDB [(none)]> show databases;
 SELECT * FROM zipcodes_one.zipcodes_one LIMIT 9990,10;
 ```
 ### It will show this result:
-
+```
 <pre>+---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City           | State | LocationType | Coord_Lat | Coord_Long | Location                | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
 +---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
@@ -191,6 +191,7 @@ SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 |   40997 | STANDARD    | WALKER      | KY    | PRIMARY      | 36.88     | -83.71     | NA-US-KY-WALKER      | FALSE         |                 |                     |            |
 |   41139 | STANDARD    | FLATWOODS   | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS   | FALSE         | 3692            | 6748                | 121902277  |
 +---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
+
 ```
 
 ### Run this command to view the largest zipcode number in zipcodes_one:
