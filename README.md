@@ -139,13 +139,13 @@ MariaDB [(none)]>
 MariaDB [(none)]> show databases;
 
 +-----------------------+                     
-|   |
+|  A |
 
-|   |
+|  B |
 
-|   |
+| B  |
 
-|   |
+| C  |
 
 |   |
 
@@ -159,7 +159,23 @@ MariaDB [(none)]> show databases;
 MariaDB [(none)]> show databases;
 
 MariaDB [(none)]> show databases;
+ <pre>show databases
+SHOW DATABASES
+SHOW DATABASES&apos; at line 2
+MariaDB [(none)]&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| zipcodes_one       |
+| zipcodes_two       |
++--------------------+
+<b>5 rows in set (0.001 sec)</b>
 
+MariaDB [(none)]&gt; 
+</pre>
 
 +--------------------+
 |                    |
