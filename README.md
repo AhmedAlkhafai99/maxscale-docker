@@ -196,18 +196,27 @@ SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 
 ### Run this command to view the largest zipcode number in zipcodes_one:
 ```
-
 SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
 ```
 ### It will show this result:
-
+```
 <pre>+---------+
 | Zipcode |
 +---------+
 |   47750 |
 +---------+
-
 ```
 
-
+### Use this command To view the smallest zipcode number in zipcodes_two
+```
+SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
+```
+### It will show this result:
+```
+<pre>+---------+
+| Zipcode |
++---------+
+|   38257 |
++---------+
+```
 
