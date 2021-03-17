@@ -176,8 +176,8 @@ SELECT * FROM zipcodes_one.zipcodes_one LIMIT 9990,10;
 SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 ```
 ### It will show this result:
+```
 
-<pre>+---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
 | Zipcode | ZipCodeType | City        | State | LocationType | Coord_Lat | Coord_Long | Location             | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
 +---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
 |   42040 | STANDARD    | FARMINGTON  | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON  | FALSE         | 465             | 896                 | 11562973  |
