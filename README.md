@@ -220,3 +220,13 @@ SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
 +---------+
 ```
 
+### Once complete, to remove the cluster and maxscale containers:
+```
+docker-compose down -v
+```
+### Sources:
+(https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
+(https://docs.docker.com/compose/install/)
+
+(https://mariadb.com/kb/en/mariadb-maxscale-25-simple-sharding-with-two-servers/)
