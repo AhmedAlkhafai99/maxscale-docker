@@ -149,6 +149,8 @@ MariaDB [(none)]> show databases;
 +-----------------------+
 
 MariaDB [(none)]> show databases;
+
+MariaDB [(none)]> show databases;
 +--------------------+
 | Database           |
 +--------------------+
@@ -158,6 +160,8 @@ MariaDB [(none)]> show databases;
 | zipcodes_one       |
 | zipcodes_two       |
 +--------------------+
+
+```
 
 ```
 
