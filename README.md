@@ -110,6 +110,17 @@ docker-compose exec maxscale maxctrl list servers
 
 ```
 
+docker-compose exec maxscale maxctrl list servers
+
+┌────────────────┬─────────┬──────┬─────────────┬─────────────────┬───────────┐
+│ Server         │ Address │ Port │ Connections │ State           │ GTID      │
+├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
+│ zip_master_one │ master  │ 3306 │ 0           │ Master, Running │ 0-3000-32 │
+├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
+│ zip_master_two │ master2 │ 3306 │ 0           │ Running         │ 0-3000-31 │
+└────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
+
+
 
 ## Run this command to connect to mariadb using the username: maxuser, maxpwd as a password and that will be on the port 4000
 ```
