@@ -99,15 +99,6 @@ maxscale_maxscale_1   /usr/bin/tini -- docker-en ...   Up      3306/tcp, 0.0.0.0
 docker-compose exec maxscale maxctrl list servers
 ```
 ### It will show this result
-
-┌────────────────┬─────────┬──────┬─────────────┬─────────────────┬───────────┐
-│ Server         │ Address │ Port │ Connections │ State           │ GTID      │
-├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
-│ zip_master_one │ master  │ 3306 │ 0           │ Running         │ 0-3000-32 │
-├────────────────┼─────────┼──────┼─────────────┼─────────────────┼───────────┤
-│ zip_master_two │ master2 │ 3306 │ 0           │ Master, Running │ 0-3000-31 │
-└────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
-
 ```
 
 docker-compose exec maxscale maxctrl list servers
