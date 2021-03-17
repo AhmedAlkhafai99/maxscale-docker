@@ -5,7 +5,7 @@ This project done on a Ubuntu virtual machine 20.10.
 Thanks to Luma for helping me to complete this project
 
 
-##The requirements:
++##The requirements:
 ```
 Build an app in docker-compos after installing Docker, docker compose, and Mariadb.
 Set up a sharded database.
